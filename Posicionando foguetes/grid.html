@@ -1,0 +1,39 @@
+<header>Topo</header>
+
+<main>Conteúdo</main>
+
+<aside>Infos adicionais</aside>
+
+<footer>Rodapé</footer>
+
+<style>
+    body{
+        display: grid;
+        font-size: 20px;
+        color: white;
+        height: 100vh;
+        margin: 0;
+        grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+        grid-template-rows: 40px 1fr 40px;
+        grid-template-columns: 1fr 150px;
+    }
+    header{
+        grid-area: header;
+        background-color: rgb(18, 194, 18);
+    }
+    main{
+        grid-area: main;
+        background-color: rgb(223, 10, 10);
+    }
+    aside{
+        grid-area: aside;
+        background-color: rgb(12, 75, 221);
+    }
+    footer{
+        grid-area: footer;
+        background-color: gray;
+    }
+</style>

@@ -1,0 +1,63 @@
+<h1>Flex</h1>
+
+<h2>Space-between</h1>
+
+<div class="container">
+    <div class="box blue"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+</div>
+
+<h2>center</h1>
+<div class="fakeBody">
+        
+        <div class="container2">
+            <div class="box blue2"></div>
+            <div class="box red2"></div>
+            <div class="box green2"></div>
+        </div>
+</div>
+
+        
+<style>
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .box{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+    }
+    .blue{
+        background-color: blue;
+    }
+    .red{
+        background-color: red;
+    }
+    .green{
+        background-color: green;
+    }
+
+    .fakeBody{
+        height: 10vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .container2{
+        width: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .blue2{
+        background-color: rgb(3, 190, 247);
+    }
+    .red2{
+        background-color: red;
+    }
+    .green2{
+        background-color: green;
+    }
+</style>
