@@ -8,7 +8,7 @@
             <li>ABOUT</li>
             <li>SERVICES</li>
             <li>TESTIMONIALS</li>
-            <button>CONTACT</button>
+            <button class="button">CONTACT</button>
         </ul>
     </nav>
 </header>
@@ -36,7 +36,7 @@
         list-style: none;
         gap: 15px;
     }
-    button{
+    .button{
         background-color: tomato;
         border: none;
         border-radius: 3px;
@@ -47,25 +47,103 @@
 <h2>Layout com duas colunas</h3>
 
 <div class="container">
-    <div class="esquerda"/>
-    <div class="direita"/>
+    <div class="esquerda"></div>
+    <div class="direita"></div>
 </div>
 
 <style>
     .container{
+        display: flex;
+        gap: 1rem;
         background-color: aliceblue;
         height: 500px;
-        display: flex;
         padding: 1rem;
-        flex-direction: row;
     }
     .esquerda{
-        background-color: thistle;
-        height: 100%;
+        flex-basis: 25%;
+        background-color: rgb(237, 170, 158);
         width: 150px;
     }
     .direita{
-        background-color: black;
-        height: 300px;
+        background-color: rgb(191, 202, 246);
+        flex: 1;
+    }
+</style>
+
+<h2>9 fotos em 3 colunas</h2>
+
+<div class="container fotos">
+    <div class="coluna">
+        <div class="foto"></div>
+        <div class="foto"></div>
+        <div class="foto"></div>
+    </div>
+    <div class="coluna">
+        <div class="foto"></div>
+        <div class="foto"></div>
+        <div class="foto"></div>
+    </div>
+    <div class="coluna">
+        <div class="foto"></div>
+        <div class="foto"></div>
+        <div class="foto"></div>
+    </div>
+</div>
+
+<style>
+    .coluna{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .fotos{
+        align-items: center;
+        justify-content: center;
+    }
+    .foto{
+        border: 2px solid gray;
+        width: 100px;
+        height: 60px;
+    }
+</style>
+
+<h2>Imagem dentro de um botão</h2>
+<button class="btnImagem">
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iNTEycHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cGF0aCBkPSJNNDA1LjIsMjMyLjlMMTI2LjgsNjcuMmMtMy40LTItNi45LTMuMi0xMC45LTMuMmMtMTAuOSwwLTE5LjgsOS0xOS44LDIwSDk2djM0NGgwLjFjMCwxMSw4LjksMjAsMTkuOCwyMCAgYzQuMSwwLDcuNS0xLjQsMTEuMi0zLjRsMjc4LjEtMTY1LjVjNi42LTUuNSwxMC44LTEzLjgsMTAuOC0yMy4xQzQxNiwyNDYuNyw0MTEuOCwyMzguNSw0MDUuMiwyMzIuOXoiLz48L3N2Zz4=" alt="">
+    play
+</button>
+
+<style>
+    button{
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        line-height: 0;
+        border: none;
+
+    }
+    button img{
+        width: 1rem;
+    }
+</style>
+
+<h2>Footer</h2>
+
+<div class="container footer">
+    <footer>2022</footer>
+</div>
+
+<style>
+    .footer{
+        align-items: flex-end;
+        padding: 0;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        background-color: gray;
+        flex: 1;
     }
 </style>
