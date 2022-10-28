@@ -1,0 +1,71 @@
+<h2>Header</h2>
+
+<header>
+    <nav>
+        <a href="#">LOGO</a>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>TESTIMONIALS</li>
+            <button>CONTACT</button>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    a{
+        color: black;
+        font-weight: bold;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    header{
+        color: black;
+        border-radius: 8px;
+        padding: 20px;
+        background-color: whitesmoke;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 15px;
+    }
+    button{
+        background-color: tomato;
+        border: none;
+        border-radius: 3px;
+        padding: 8px;
+    }
+</style>
+
+<h2>Layout com duas colunas</h3>
+
+<div class="container">
+    <div class="esquerda"/>
+    <div class="direita"/>
+</div>
+
+<style>
+    .container{
+        background-color: aliceblue;
+        height: 500px;
+        display: flex;
+        padding: 1rem;
+        flex-direction: row;
+    }
+    .esquerda{
+        background-color: thistle;
+        height: 100%;
+        width: 150px;
+    }
+    .direita{
+        background-color: black;
+        height: 300px;
+    }
+</style>

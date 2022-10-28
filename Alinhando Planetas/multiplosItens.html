@@ -1,0 +1,46 @@
+<div class="page">
+    <aside>Aside</aside>
+    <main>
+        Main
+        <section>Content 1</section>
+        <section>Content 2</section>
+        <section>Content 3</section>
+    </main>
+</div>
+
+<style>
+    *{
+        font-size: 20px;
+        color: black;
+    }
+    .page{
+        display: flex;
+        box-sizing: border-box;
+        width: 80%;
+        height: 90vh;
+        border: 3px solid white;
+    }
+    aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        background-color: violet;
+        border-right: 2px solid white;
+        max-width: 120px;
+    }
+    main{
+        display: flex;
+        background-color: aquamarine;
+        flex: 2;
+        flex-direction: column;
+    }
+    section{
+        display: flex;
+        border-top: 2px solid white;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        background-color: coral;
+    }
+</style>

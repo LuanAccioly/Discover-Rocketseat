@@ -1,0 +1,127 @@
+<style>
+    div{
+        font-size: 20px;
+    }
+    .container{
+        margin-top: 10px;
+        box-sizing: border-box;
+        font-size: 20px;
+        display: flex;
+        border: 2px solid;
+        height: 30vh;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px;
+        
+    }
+    .item{
+        
+        border: 1px solid;
+        height: 20vh;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .row-inverse{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .column{
+        block-size: auto;
+        height: 50vh;
+        width: 30vh;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .flex-wrap{
+        block-size: auto;
+        flex-wrap: wrap;
+    }
+    .item-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid;
+        height: 20vh;
+        width: 200px;
+        margin: 5px;
+    }
+    .item-flex-basis{
+        display: flex;
+        border: 3px solid;
+        flex-basis: 25%;
+    }
+    .flex-basis{
+        display: flex;
+        border: 3px solid;
+        height: 100px;
+    }
+</style>
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+
+<h2>Flex-direction</h2>
+<h3>flex-direction: row-reverse</h3>
+<div class="container row-inverse">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+</div>
+
+<h3>flex-direction: column</h3>
+<div class="container column">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+</div>
+
+<h3>flex-wrap</h3>
+<div class="container flex-wrap">
+    <div class="item-flex">A</div>
+    <div class="item-flex">B</div>
+    <div class="item-flex">C</div>
+    <div class="item-flex">D</div>
+</div>
+
+<h3>flex-basis</h3>
+<div class="flex-basis">
+    <div class="item-flex-basis">A</div>
+    <div class="item-flex-basis">B</div>
+    <div class="item-flex-basis">C</div>
+    <div class="item-flex-basis">D</div>
+</div>
+
+<style>
+    .flex-grow{
+        margin-top: 10px;
+        font-size: 20px;
+        display: flex;
+        border: 2px solid;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 1px;
+    }
+    .item-flex-grow{
+        border: 3px solid;
+        height: 100%;
+        width: 70px;
+    }
+    .item-flex-grow:nth-child(2){
+        flex-grow: 1;
+    }
+</style>
+
+<h3>flex-grow</h3>
+
+<div class="flex-grow">
+    <div class="item-flex-grow">A</div>
+    <div class="item-flex-grow">B</div>
+    <div class="item-flex-grow">C</div>
+    <div class="item-flex-grow">D</div>
+</div>
