@@ -1,9 +1,9 @@
 function transformarNotas(nota){
     if(nota >= 90){return 'A'}
-    else if(nota >= 80){return 'B'}
-    else if(nota >= 70){return 'C'}
-    else if(nota >= 60){return 'D'}
-    else return 'F'
+    if(nota >= 80){return 'B'}
+    if(nota >= 70){return 'C'}
+    if(nota >= 60){return 'D'}
+    return 'F'
 }
 
 let familia = {
@@ -22,12 +22,10 @@ function soma(valor){
 }
 /* console.log(`A situação deste mês é de ${soma(familia.receitas) - soma(familia.despesas)}`); */
 
-function CtoF(x){
+function celsiusToFahrenheit (x){
     let temperature = x.toUpperCase()
     let temperatureNumber = parseInt(removeLetter(temperature))
 
-
-    
     return temperature.includes('C') ? (temperatureNumber * 9/5 + 32) : ((temperatureNumber  - 32) * 5/9)
 }
 
